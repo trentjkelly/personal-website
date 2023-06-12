@@ -61,6 +61,8 @@ hr {
 }
 
 .landing-page {
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,10 +93,21 @@ hr {
 }
 
 #name-box {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+
+#name-box p {
+    font-size: 2rem;
+    padding-top: 0.5rem;
 }
 
 /* Education page */
