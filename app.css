@@ -47,162 +47,30 @@ table {
 	border-spacing: 0;
 }
 
-/* My changes start here */
-/* General page things */
-.page {
+/* ---------------------- */
+/* My Changes Start Here: */
+/* ---------------------- */
+
+.landingPage {
     height: 100vh;
-}
-
-hr {
-    background-color: black;
-}
-
-.page:nth-of-type(2n) {
-    background-color: black;
-    color: white;
-    border-color: white;
-}
-
-.page-content-row {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-}
-
-.page-content-col {
-    width: 90%;
-    height: 90%;
     display: flex;
     flex-direction: column;
-}
-
-.tags {
-    height: 10%;
-    width: 100%;
-}
-
-.boxes-row {
-    height: 80%;
-    width: 100%;
-}
-
-/* Landing Page */
-.landing-page {
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-#left-landing {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 65%;
-    height: 100%;
-}
-
-#landing-name {
-    height: 20%
-}
-
-#brut-divider {
-    height: 30%;
-    width: 100%;
-    border: 3px solid black;
-}
-
-#landing-information {
-    height: 50%;
-    width: 100%;
-    border: 3px solid black;
-    margin-top: 5px;
-}
-
-#right-landing {
-    height: 99%;
-    width: 35%;
-    border: 3px solid black;
-    margin-left: 6px;
-}
-
-img {
-    width: 32%;
+    font-family: "Darker Grotesque";
 }
 
 h1 {
-    font-family: 'Darker Grotesque', sans-serif;
-    font-size: 8rem;
-    text-transform: uppercase;
+    font-size: 10vw;
 }
 
-/* Skills page */
+h2 {
+    padding-top: 1vw;
+    font-size: 3vw;
 
-.skills-page {
-    display: flex;
-    align-items: center;
 }
 
-.skills-section {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
+p {
+    font-size: 2.5vw;
+    padding-top: 1vw;
 }
-
-.skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.skill-category {
-    border: 2px solid;
-    min-width: 25vw;
-    text-align: center;
-}
-
-/* Education page */
-.education-page {
-    display: flex;
-    align-items: center;
-}
-
-.education-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.edu-box {
-    border: 2px solid;
-    min-width: 25vw;
-    min-height: 100%;
-    text-align: center;
-}
-
-/* Projects Page */
-.projects-page {
-    display: flex;
-    align-items: center;
-}
-
-.project-section {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-}
-
-.proj-box {
-    border: 2px solid;
-    width: 25vw;
-    min-height: 100%;
-    text-align: center;
-}
-
-/* about me section */
-
-
