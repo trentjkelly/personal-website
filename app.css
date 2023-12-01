@@ -53,6 +53,23 @@ table {
 
 /* Current color palette: https://colorhunt.co/palette/040d12183d3d5c837493b1a6 */
 
+
+/* ------------ */
+/* LANDING PAGE */
+/* ------------ */
+
+#trail {
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	background-color: #5C8374;
+	border-radius: 50%;
+	pointer-events: none;
+	opacity: 1;
+	transition: opacity 0.8s linear, transform 0.8s linear;
+}
+
+
 h1 {
     font-size: 10vw;
 }
@@ -66,6 +83,106 @@ h1 {
     font-family: "Darker Grotesque";
 	color: #5C8374;
 }
+/* ------------ */
+/* ABOUT ME PAGE */
+/* ------------ */
+
+.aboutMePage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #93B1A6;
+}
+
+.aboutMePage h2 {
+	font-family: "Darker Grotesque";
+	color: #183D3D;
+	font-size: 6vw;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+@media (max-width: 1024px){
+	.mainAboutMe {
+		margin-bottom: 100px;
+		display: flex;
+		flex-direction: column-reverse; 
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.pictureMe {
+		width: 50vw;
+	}
+}
+
+@media (min-width: 1024px) {
+	.mainAboutMe {
+		margin-bottom: 100px;
+		display: flex;
+		flex-direction: row; 
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.pictureMe {
+		width: 30vw;
+	}
+}
+
+.aboutMePage img {
+	height: 100%;
+	width: 100%;
+	border: 1px solid white;
+	border-radius: 5%;
+}
+
+.codeText {
+	white-space: pre-wrap;
+	font-family: 'Courier Prime', monospace;
+	border: 1px solid white;
+	border-radius: 5%;
+	padding: 1rem;
+	color: white;
+	background-color: #1e1e1e;
+}
+
+.greyCode {
+	color: grey;
+}
+
+.pinkCode {
+	color: fuchsia;
+}
+
+.greenCode {
+	color: #a5d46a;
+}
+
+.yellowCode {
+	color: #ffff80;
+}
+
+.blueCode {
+	color: lightBlue;
+}
+
+.redCode {
+	color: #ffa080;
+}
+
+.pinkCode {
+	color: pink;
+}
+
+.orangeCode {
+	color: orange;
+}
+
+/* ------------ */
+/* COURSEWORK PAGE */
+/* ------------ */
 
 .courseworkPage {
 	background-color: #183D3D;

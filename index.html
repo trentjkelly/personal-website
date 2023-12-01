@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@800&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <title>Trent Kelly</title>
 </head>
 <body>
@@ -16,7 +17,51 @@
         <h1>Trent Kelly</h1>
         <h2>Computer Science Student</h2>
         <p>University of Minnesota '25</p>
-        <p>Page under re-design currently...</p>
+    </page>
+    
+    <page class="aboutMePage">
+        <h2>About Me!</h2>
+        <section class="mainAboutMe">
+
+                <div class="pictureMe"><img src="assets/trent.JPG" alt="Picture of me bruv" class=""></div>
+
+                <div class="codeText">
+ <span class="greyCode">1</span>    <span class="pinkCode">#include</span> <span class="greenCode">&lt;string&gt;</span>
+ <span class="greyCode">2</span>    <span class="pinkCode">#include</span> <span class="greenCode">&lt;iostream&gt;</span>
+ <span class="greyCode">3</span>    <span class="pinkCode">using namespace</span> <span class="yellowCode">std</span>;
+ <span class="greyCode">4</span>    
+ <span class="greyCode">5</span>    <span class="pinkCode">class</span> <span class="yellowCode">Person</span> {
+ <span class="greyCode">6</span>        <span class="pinkCode">private:</span>
+ <span class="greyCode">7</span>            <span class="blueCode">int</span> <span class="redCode">socialSecurityNum;</span>
+ <span class="greyCode">8</span>            <span class="blueCode">string</span> <span class="redCode">celebrityCrush;</span>
+ <span class="greyCode">9</span>            <span class="blueCode">string</span> <span class="redCode">myFeelings;</span>
+<span class="greyCode">10</span>       <span class="pinkCode">public:</span>
+<span class="greyCode">11</span>            <span class="blueCode">string</span> <span class="redCode">myName;</span>
+<span class="greyCode">12</span>            <span class="blueCode">string</span> <span class="redCode">school;</span>
+<span class="greyCode">13</span>            <span class="blueCode">int</span> <span class="redCode">gradYear;</span>
+<span class="greyCode">14</span>            <span class="blueCode">string</span> <span class="redCode">email;</span>
+<span class="greyCode">15</span>            <span class="blueCode">string</span> <span class="redCode">gitHub;</span>
+<span class="greyCode">16</span>            <span class="blueCode">string</span> <span class="redCode">resume;</span>
+<span class="greyCode">17</span>
+<span class="greyCode">18</span>            <span class="yellowCode">Person</span>(){
+<span class="greyCode">19</span>                <span class="redCode">myName</span> <span class="pinkCode">=</span> <span class="greenCode">"Trent Kelly"</span>;
+<span class="greyCode">20</span>                <span class="redCode">school</span> <span class="pinkCode">=</span> <span class="greenCode">"University of Minnesota"</span>;
+<span class="greyCode">21</span>                <span class="redCode">gradYear</span> <span class="pinkCode">=</span> <span class="orangeCode">2025</span>;
+<span class="greyCode">22</span>                <span class="redCode">email</span> <span class="pinkCode">=</span> <span class="greenCode">"trentjkelly@outlook.com"</span>;
+<span class="greyCode">23</span>                <span class="redCode">gitHub</span> <span class="pinkCode">=</span> <span class="greenCode">"https://github.com/trentjkelly"</span>;
+<span class="greyCode">24</span>                <span class="redCode">resume</span> <span class="pinkCode">=</span> <span class="greenCode">"Click Here!"</span>;
+<span class="greyCode">25</span>            }
+<span class="greyCode">26</span>
+<span class="greyCode">27</span>            <span class="blueCode">void</span> <span class="yellowCode">Hobbies</span>(){
+<span class="greyCode">28</span>                <span class="redCode">cout</span> <span class="blueCode"><<</span> <span class="greenCode">Marathon Running"</span> <span class="pinkCode"><<</span> <span class="blueCode">endl</span>;
+<span class="greyCode">29</span>                <span class="redCode">cout</span> <span class="blueCode"><<</span> <span class="greenCode">Mediterranean Cooking"</span> <span class="pinkCode"><<</span> <span class="blueCode">endl</span>;
+<span class="greyCode">30</span>                <span class="redCode">cout</span> <span class="blueCode"><<</span> <span class="greenCode">Playing Guitar"</span> <span class="pinkCode"><<</span> <span class="blueCode">endl</span>;
+<span class="greyCode">31</span>                <span class="redCode">cout</span> <span class="blueCode"><<</span> <span class="greenCode">Mindfulness/Meditation"</span> <span class="pinkCode"><<</span> <span class="blueCode">endl</span>;
+<span class="greyCode">32</span>                <span class="redCode">cout</span> <span class="blueCode"><<</span> <span class="greenCode">Weightlifting"</span> <span class="pinkCode"><<</span> <span class="blueCode">endl</span>;
+<span class="greyCode">33</span>            }
+<span class="greyCode">34</span>    };
+                </div>
+        </section>
     </page>
 
     <page class="courseworkPage">
@@ -31,7 +76,7 @@
                 <p>CSCI 2033 - Elementary Computational Linear Algebra</p>
                 <p>CSCI 2041 - Advanced Programming Principles (OCaml)</p>
                 <p>CSCI 4041 - Algorithms & Data Structures</p>
-                <p>CSCI 3081W - Program Design & Development</p>
+                <p>CSCI 3081W - Program Design & Development (C++)</p>
                 <p>CSCI 4707 - Practice of Database Systems (SQL)</p>
             </div>
 
@@ -47,10 +92,11 @@
                 <p>MATH 1371 - CSE Calc I</p>
                 <p>MATH 1372 - CSE Calc II</p>
                 <p>STAT 3021 - Introduction to Probability & Statistics</p>
-                <p>MATH 4242 - Applied Linear Algebra</p>
             </div>
         </section>
 
     </page>
+
+    <script src="chill.js"></script>
 </body>
 </html>
