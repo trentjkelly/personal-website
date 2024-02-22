@@ -66,5 +66,14 @@ if (document !== null) {
                 document.body.removeChild(trail);
             }, 800);
         });
+        //Change body background color to projects page once scrolled
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                document.body.classList.add("backgroundScrollColor");
+            }
+            if (window.scrollY < 100) {
+                document.body.classList.remove("backgroundScrollColor");
+            }
+        });
     }
 }

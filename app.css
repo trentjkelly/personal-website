@@ -52,6 +52,19 @@ table {
 /* ---------------------- */
 
 /* Current color palette: https://colorhunt.co/palette/040d12183d3d5c837493b1a6 */
+h2 {
+    padding-top: 1vw;
+    font-size: 3vw;
+}
+
+p {
+    font-size: 2.5vw;
+    padding-top: 1vw;
+}
+
+.backgroundScrollColor {
+	background-color: #1e1e1e;
+}
 
 
 /* ------------ */
@@ -82,6 +95,7 @@ h1 {
     justify-content: center;
     font-family: "Darker Grotesque";
 	color: #5C8374;
+	background-color: white;
 }
 /* ------------ */
 /* ABOUT ME PAGE */
@@ -195,7 +209,7 @@ h1 {
 }
 
 .courseworkPage div {
-	padding-bottom: 3vw;
+	padding-bottom: 1vw;
 }
 
 .courseworkPage h2 {
@@ -206,6 +220,8 @@ h1 {
 
 .courseworkPage div p {
 	text-align: center;
+	font-size: 2rem;
+	padding: 0.2rem;
 }
 
 .courseworkPage h3 {
@@ -214,20 +230,10 @@ h1 {
 }
 
 .totalCoursework {
-	border: 1px solid black;
+	border: 2px solid #183D3D;
 	border-radius: 5%;
 	padding: 1vw 2vw;
 	margin-bottom: 5vw;
-}
-
-h2 {
-    padding-top: 1vw;
-    font-size: 3vw;
-}
-
-p {
-    font-size: 2.5vw;
-    padding-top: 1vw;
 }
 
 /* ------------- */
@@ -237,7 +243,7 @@ p {
 	display: block;
 	background-color: #1e1e1e;
 	color: #93B1A6;
-	height: 100vh;
+	padding-bottom: 10vh;
 }
 
 .projectsPage h2 {
