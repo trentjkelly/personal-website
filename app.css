@@ -92,12 +92,12 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color:#93B1A6;
+	background-color:#183D3D;
 }
 
 .aboutMePage h2 {
 	font-family: "Darker Grotesque";
-	color: #183D3D;
+	color: #93B1A6;
 	font-size: 6vw;
 	margin-top: 5%;
 	margin-bottom: 5%;
@@ -134,18 +134,18 @@ h1 {
 .aboutMePage img {
 	height: 100%;
 	width: 100%;
-	border: 1px solid white;
+	border: 1px solid #93B1A6;
 	border-radius: 5%;
 }
 
 .codeText {
 	white-space: pre-wrap;
 	font-family: 'Courier Prime', monospace;
-	border: 1px solid white;
+	border: 1px solid #93B1A6;
 	border-radius: 5%;
 	padding: 1rem;
 	color: white;
-	background-color: #1e1e1e;
+	background-color: #183D3D;
 }
 
 .greyCode {
@@ -185,8 +185,8 @@ h1 {
 /* ------------ */
 
 .courseworkPage {
-	background-color: #183D3D;
-	color: #93B1A6;
+	background-color: #93B1A6;
+	color: #183D3D;
 	font-family: "Darker Grotesque";
 	display: flex; 
 	flex-direction: column;
@@ -229,3 +229,36 @@ p {
     font-size: 2.5vw;
     padding-top: 1vw;
 }
+
+/* ------------- */
+/* PROJECTS PAGE */
+/* ------------- */
+.projectsPage {
+	display: block;
+	background-color: #1e1e1e;
+	color: #93B1A6;
+	height: 100vh;
+}
+
+.projectsPage h2 {
+	font-family: "Darker Grotesque";
+	text-align: center;
+	padding-top: 2vw;
+    font-size: 5vw;
+}
+
+.projectFlex {
+	display: flex;
+	align-items: center;
+}
+
+.projectBox {
+	border: 1px solid #93B1A6;
+	border-radius: 5%;
+	width: 30%;
+	height: 400px;
+}
+
+/* -------------------- */
+/* MOBILE MEDIA QUERIES */
+/* -------------------- */
