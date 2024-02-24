@@ -240,7 +240,9 @@ h1 {
 /* PROJECTS PAGE */
 /* ------------- */
 .projectsPage {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: #1e1e1e;
 	color: #93B1A6;
 	padding-bottom: 10vh;
@@ -254,14 +256,21 @@ h1 {
 }
 
 .projectFlex {
+	width: 80%;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+}
+
+.projectRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .projectBox {
 	border: 1px solid #93B1A6;
 	border-radius: 5%;
-	width: 30%;
+	width: 40%;
 	height: 400px;
 }
 

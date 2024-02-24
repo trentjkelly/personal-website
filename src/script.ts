@@ -92,6 +92,5 @@ if(document !== null){
                 document.body.classList.remove("backgroundScrollColor")
             }
         });
-        
     }
 }
