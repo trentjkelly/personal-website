@@ -51,19 +51,35 @@ table {
 /* My Changes Start Here: */
 /* ---------------------- */
 
-/* Current color palette: https://colorhunt.co/palette/040d12183d3d5c837493b1a6 */
+/* DEFINED CONSTANTS */
+:root {
+	--dark-stone: #1E1E1E;
+	--darkest-purple: #28104E;
+	--dark-purple: #6237A0;
+	--medium-purple:#9754CB;
+	--light-purple: #DEACF5;
+}
+
+/* -------------------- */
+/*     MOBILE FIRST     */
+/* -------------------- */
+
+body {
+	background-color: var(--dark-stone);
+}
+
 h2 {
-    padding-top: 1vw;
-    font-size: 3vw;
+	padding-top: 1vw;
+	font-size: 6vw;
 }
 
 p {
-    font-size: 2.5vw;
-    padding-top: 1vw;
+	font-size: 5vw;
+	padding-top: 1vw;
 }
 
 .backgroundScrollColor {
-	background-color: #1e1e1e;
+	background-color: var(--dark-stone);
 }
 
 
@@ -75,27 +91,26 @@ p {
 	position: absolute;
 	width: 7px;
 	height: 7px;
-	background-color: #5C8374;
+	background-color: var(--medium-purple);
 	border-radius: 50%;
 	pointer-events: none;
 	opacity: 1;
 	transition: opacity 0.8s linear, transform 0.8s linear;
 }
 
-
 h1 {
-    font-size: 10vw;
+	font-size: 100px;
 }
 
 .landingPage {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Darker Grotesque";
-	color: #5C8374;
-	background-color: white;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: "Darker Grotesque";
+	color: var(--medium-purple);
+	background-color: var(--dark-stone);
 }
 /* ------------ */
 /* ABOUT ME PAGE */
@@ -106,60 +121,44 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color:#183D3D;
+	background-color:var(--darkest-purple);
 }
 
 .aboutMePage h2 {
 	font-family: "Darker Grotesque";
-	color: #93B1A6;
+	color: var(--light-purple);
 	font-size: 6vw;
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
-@media (max-width: 1024px){
-	.mainAboutMe {
-		margin-bottom: 100px;
-		display: flex;
-		flex-direction: column-reverse; 
-		align-items: center;
-		justify-content: space-evenly;
-	}
-
-	.pictureMe {
-		width: 50vw;
-	}
+.mainAboutMe {
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: row; 
+	align-items: center;
+	justify-content: space-evenly;
 }
 
-@media (min-width: 1024px) {
-	.mainAboutMe {
-		margin-bottom: 100px;
-		display: flex;
-		flex-direction: row; 
-		align-items: center;
-		justify-content: space-evenly;
-	}
-
-	.pictureMe {
-		width: 30vw;
-	}
+.pictureMe {
+	width: 30vw;
 }
 
 .aboutMePage img {
 	height: 100%;
 	width: 100%;
-	border: 1px solid #93B1A6;
+	border: 1px solid var(--light-purple);
 	border-radius: 5%;
 }
 
 .codeText {
 	white-space: pre-wrap;
 	font-family: 'Courier Prime', monospace;
-	border: 1px solid #93B1A6;
+	border: 1px solid var(--light-purple);
 	border-radius: 5%;
 	padding: 1rem;
 	color: white;
-	background-color: #183D3D;
+	background-color: var(--darkest-purple);
 }
 
 .greyCode {
@@ -199,8 +198,8 @@ h1 {
 /* ------------ */
 
 .courseworkPage {
-	background-color: #93B1A6;
-	color: #183D3D;
+	background-color: var(--light-purple);
+	color: var(--darkest-purple);
 	font-family: "Darker Grotesque";
 	display: flex; 
 	flex-direction: column;
@@ -230,7 +229,7 @@ h1 {
 }
 
 .totalCoursework {
-	border: 2px solid #183D3D;
+	border: 2px solid var(--darkest-purple);
 	border-radius: 5%;
 	padding: 1vw 2vw;
 	margin-bottom: 5vw;
@@ -243,8 +242,8 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #1e1e1e;
-	color: #93B1A6;
+	background-color: var(--dark-stone);
+	color: var(--light-purple);
 	padding-bottom: 10vh;
 }
 
@@ -252,7 +251,7 @@ h1 {
 	font-family: "Darker Grotesque";
 	text-align: center;
 	padding-top: 2vw;
-    font-size: 5vw;
+	font-size: 5vw;
 }
 
 .projectFlex {
@@ -268,12 +267,222 @@ h1 {
 }
 
 .projectBox {
-	border: 1px solid #93B1A6;
+	border: 1px solid var(--light-purple);
 	border-radius: 5%;
 	width: 40%;
 	height: 400px;
 }
 
+
 /* -------------------- */
-/* MOBILE MEDIA QUERIES */
+/*   COMPUTER SCREEN    */
 /* -------------------- */
+
+@media screen and (min-width: 1024px){
+	
+	h2 {
+		padding-top: 1vw;
+		font-size: 3vw;
+	}
+	
+	p {
+		font-size: 2.5vw;
+		padding-top: 1vw;
+	}
+	
+	.backgroundScrollColor {
+		background-color: var(--light-purple);
+	}
+	
+	
+	/* ------------ */
+	/* LANDING PAGE */
+	/* ------------ */
+	
+	#trail {
+		position: absolute;
+		width: 7px;
+		height: 7px;
+		background-color: var(--medium-purple);
+		border-radius: 50%;
+		pointer-events: none;
+		opacity: 1;
+		transition: opacity 0.8s linear, transform 0.8s linear;
+	}
+	
+	
+	h1 {
+		font-size: 10vw;
+	}
+	
+	.landingPage {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-family: "Darker Grotesque";
+		color: var(--medium-purple);
+		background-color: var(--dark-stone);
+	}
+	/* ------------ */
+	/* ABOUT ME PAGE */
+	/* ------------ */
+	
+	.aboutMePage {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color:var(--darkest-purple);
+	}
+	
+	.aboutMePage h2 {
+		font-family: "Darker Grotesque";
+		color: var(--light-purple);
+		font-size: 6vw;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	
+	.mainAboutMe {
+		margin-bottom: 100px;
+		display: flex;
+		flex-direction: row; 
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	
+	.pictureMe {
+		width: 30vw;
+	}
+	
+	.aboutMePage img {
+		height: 100%;
+		width: 100%;
+		border: 1px solid var(--light-purple);
+		border-radius: 5%;
+	}
+	
+	.codeText {
+		white-space: pre-wrap;
+		font-family: 'Courier Prime', monospace;
+		border: 1px solid var(--light-purple);
+		border-radius: 5%;
+		padding: 1rem;
+		color: white;
+		background-color: var(--darkest-purple);
+	}
+	
+	.greyCode {
+		color: grey;
+	}
+	
+	.pinkCode {
+		color: fuchsia;
+	}
+	
+	.greenCode {
+		color: #a5d46a;
+	}
+	
+	.yellowCode {
+		color: #ffff80;
+	}
+	
+	.blueCode {
+		color: lightBlue;
+	}
+	
+	.redCode {
+		color: #ffa080;
+	}
+	
+	.pinkCode {
+		color: pink;
+	}
+	
+	.orangeCode {
+		color: orange;
+	}
+	
+	/* ------------ */
+	/* COURSEWORK PAGE */
+	/* ------------ */
+	
+	.courseworkPage {
+		background-color: var(--light-purple);
+		color: var(--darkest-purple);
+		font-family: "Darker Grotesque";
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.courseworkPage div {
+		padding-bottom: 1vw;
+	}
+	
+	.courseworkPage h2 {
+		font-size: 6vw;
+		padding-top: 4vw;
+		padding-bottom: 4vw;
+	}
+	
+	.courseworkPage div p {
+		text-align: center;
+		font-size: 2rem;
+		padding: 0.2rem;
+	}
+	
+	.courseworkPage h3 {
+		font-size: 4vw;
+		text-align: center;
+	}
+	
+	.totalCoursework {
+		border: 2px solid var(--darkest-purple);
+		border-radius: 5%;
+		padding: 1vw 2vw;
+		margin-bottom: 5vw;
+	}
+	
+	/* ------------- */
+	/* PROJECTS PAGE */
+	/* ------------- */
+	.projectsPage {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: var(--dark-stone);
+		color: var(--light-purple);
+		padding-bottom: 10vh;
+	}
+	
+	.projectsPage h2 {
+		font-family: "Darker Grotesque";
+		text-align: center;
+		padding-top: 2vw;
+		font-size: 5vw;
+	}
+	
+	.projectFlex {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.projectRow {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.projectBox {
+		border: 1px solid var(--light-purple);
+		border-radius: 5%;
+		width: 40%;
+		height: 400px;
+	}
+}
