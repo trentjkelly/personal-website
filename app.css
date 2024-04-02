@@ -51,7 +51,7 @@ table {
 /* My Changes Start Here: */
 /* ---------------------- */
 
-/* DEFINED CONSTANTS */
+/* DEFINED CONSTANTS, ANIMATIONS, & BASICS */
 :root {
 	--dark-stone: #1E1E1E;
 	--darkest-purple: #28104E;
@@ -59,33 +59,6 @@ table {
 	--medium-purple:#9754CB;
 	--light-purple: #DEACF5;
 }
-
-/* -------------------- */
-/*     MOBILE FIRST     */
-/* -------------------- */
-
-body {
-	background-color: var(--dark-stone);
-}
-
-h2 {
-	padding-top: 1vw;
-	font-size: 6vw;
-}
-
-p {
-	font-size: 5vw;
-	padding-top: 1vw;
-}
-
-.backgroundScrollColor {
-	background-color: var(--dark-stone);
-}
-
-
-/* ------------ */
-/* LANDING PAGE */
-/* ------------ */
 
 #trail {
 	position: absolute;
@@ -98,9 +71,37 @@ p {
 	transition: opacity 0.8s linear, transform 0.8s linear;
 }
 
+body {
+	background-color: var(--dark-stone);
+	font-family: "Darker Grotesque";
+	font-weight: 700;
+}
+
+.backgroundScrollColor {
+	background-color: var(--light-purple);
+}
+
+/* -------------------- */
+/*     MOBILE FIRST     */
+/* -------------------- */
+
 h1 {
 	font-size: 100px;
 }
+
+h2 {
+	padding-top: 1vw;
+	font-size: 6vw;
+}
+
+p {
+	font-size: 1rem;
+	padding-top: 1vw;
+}
+
+/* ------------ */
+/* LANDING PAGE */
+/* ------------ */
 
 .landingPage {
 	height: 100vh;
@@ -108,7 +109,6 @@ h1 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: "Darker Grotesque";
 	color: var(--medium-purple);
 	background-color: var(--dark-stone);
 }
@@ -125,7 +125,6 @@ h1 {
 }
 
 .aboutMePage h2 {
-	font-family: "Darker Grotesque";
 	color: var(--light-purple);
 	font-size: 6vw;
 	margin-top: 5%;
@@ -154,11 +153,12 @@ h1 {
 .codeText {
 	white-space: pre-wrap;
 	font-family: 'Courier Prime', monospace;
+	font-weight: 300;
 	border: 1px solid var(--light-purple);
 	border-radius: 5%;
 	padding: 1rem;
 	color: white;
-	background-color: var(--darkest-purple);
+	background-color: var(--dark-stone);
 }
 
 .greyCode {
@@ -218,8 +218,10 @@ h1 {
 }
 
 .courseworkPage div p {
+	/* font-family: "Inter"; */
+	font-weight: 400;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	padding: 0.2rem;
 }
 
@@ -238,6 +240,7 @@ h1 {
 /* ------------- */
 /* PROJECTS PAGE */
 /* ------------- */
+
 .projectsPage {
 	display: flex;
 	flex-direction: column;
@@ -294,23 +297,10 @@ h1 {
 		background-color: var(--light-purple);
 	}
 	
-	
 	/* ------------ */
 	/* LANDING PAGE */
 	/* ------------ */
-	
-	#trail {
-		position: absolute;
-		width: 7px;
-		height: 7px;
-		background-color: var(--medium-purple);
-		border-radius: 50%;
-		pointer-events: none;
-		opacity: 1;
-		transition: opacity 0.8s linear, transform 0.8s linear;
-	}
-	
-	
+		
 	h1 {
 		font-size: 10vw;
 	}
@@ -321,9 +311,6 @@ h1 {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		font-family: "Darker Grotesque";
-		color: var(--medium-purple);
-		background-color: var(--dark-stone);
 	}
 	/* ------------ */
 	/* ABOUT ME PAGE */
@@ -334,12 +321,9 @@ h1 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color:var(--darkest-purple);
 	}
 	
 	.aboutMePage h2 {
-		font-family: "Darker Grotesque";
-		color: var(--light-purple);
 		font-size: 6vw;
 		margin-top: 5%;
 		margin-bottom: 5%;
@@ -360,50 +344,13 @@ h1 {
 	.aboutMePage img {
 		height: 100%;
 		width: 100%;
-		border: 1px solid var(--light-purple);
 		border-radius: 5%;
 	}
 	
 	.codeText {
 		white-space: pre-wrap;
-		font-family: 'Courier Prime', monospace;
-		border: 1px solid var(--light-purple);
 		border-radius: 5%;
 		padding: 1rem;
-		color: white;
-		background-color: var(--darkest-purple);
-	}
-	
-	.greyCode {
-		color: grey;
-	}
-	
-	.pinkCode {
-		color: fuchsia;
-	}
-	
-	.greenCode {
-		color: #a5d46a;
-	}
-	
-	.yellowCode {
-		color: #ffff80;
-	}
-	
-	.blueCode {
-		color: lightBlue;
-	}
-	
-	.redCode {
-		color: #ffa080;
-	}
-	
-	.pinkCode {
-		color: pink;
-	}
-	
-	.orangeCode {
-		color: orange;
 	}
 	
 	/* ------------ */
@@ -411,9 +358,6 @@ h1 {
 	/* ------------ */
 	
 	.courseworkPage {
-		background-color: var(--light-purple);
-		color: var(--darkest-purple);
-		font-family: "Darker Grotesque";
 		display: flex; 
 		flex-direction: column;
 		align-items: center;
@@ -432,7 +376,7 @@ h1 {
 	
 	.courseworkPage div p {
 		text-align: center;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		padding: 0.2rem;
 	}
 	
@@ -442,7 +386,6 @@ h1 {
 	}
 	
 	.totalCoursework {
-		border: 2px solid var(--darkest-purple);
 		border-radius: 5%;
 		padding: 1vw 2vw;
 		margin-bottom: 5vw;
@@ -455,13 +398,10 @@ h1 {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: var(--dark-stone);
-		color: var(--light-purple);
 		padding-bottom: 10vh;
 	}
 	
 	.projectsPage h2 {
-		font-family: "Darker Grotesque";
 		text-align: center;
 		padding-top: 2vw;
 		font-size: 5vw;
@@ -480,7 +420,6 @@ h1 {
 	}
 	
 	.projectBox {
-		border: 1px solid var(--light-purple);
 		border-radius: 5%;
 		width: 40%;
 		height: 400px;
